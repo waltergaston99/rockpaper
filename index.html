@@ -1,0 +1,59 @@
+<!DOCTYPe html>
+<html>
+    <head>
+        <title>Rock Paper Scissors</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,300&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="header">
+            <div class="playerCount count">0</div>
+            <div class="title">Rock Paper Scissors</div>
+            <div class="computerCount count">0</div>
+        </div>
+        <div class="content">
+            <div class="info">Select your move</div>
+            <div class="playground">
+                <div class="playerWins">0</div>
+                <div class="playground-2">
+                    <div class="playerSide">
+                        <div class="playerTitle">Player</div>
+                        <div class="selections">
+                            <div class="item" id="rock" onclick='game("rock")'>
+                                <img src="images/rock.png">
+                                <div class="description">Rock</div>
+                            </div>
+                            <div class="item" id="paper" onclick='game("paper")'>
+                                <img src="images/paper.png">
+                                <div class="description">Paper</div>
+                            </div>
+                            <div class="item" id="scissors" onclick='game("scissors")'> 
+                                <img src="images/scissors.png">
+                                <div class="description">Scissors</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="computerSide">
+                        <div class="playerTitle">PC</div>
+                        <div class="selections">
+                            <div class="item pc-item" id="computerSelection">
+                                <img src="images/rock.png">
+                                <div class="description">Rock</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="computerWins">0</div>
+            </div>
+            <div class="result">Make your first move!</div>
+        </div>
+        <div class="footer">
+            Rock Paper Scissors by Walter Gaston Vale
+        </div>
+    </body>
+</html>
